@@ -17,23 +17,23 @@ function createPromise(e) {
 
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      state === 'fulfilled' ? resolve('Fulfilled') : reject('Rejected');
+      state === 'fulfilled' ? resolve(delay) : reject(delay);
     }, delay);
   })
-    .then(() => {
+    .then((delay) => {
       iziToast.success({
         ...toastOptions,
         iconText: '✅',
         title: 'Fulfilled',
-        message: `promise in ${delay}ms`
+        message: `Fulfilled promise in ${delay}ms`
       });
     })
-    .catch(() => {
+    .catch((delay) => {
       iziToast.error({
         ...toastOptions,
         iconText: '❌',
         title: 'Rejected',
-        message: `promise in ${delay}ms`
+        message: `Rejected promise in ${delay}ms`
       });
     })
     .finally(() => {
