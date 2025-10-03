@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.text {
+  text-align: left;
+}
+.delay input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 16px;
+  transition: border-color 0.3s;
+}
+
+.delay input:focus,
+.delay input:focus-visible {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+.fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #808080;
+  padding: 12px;
+  transition: border-color 0.3s;
+}
+
+.fieldset:hover {
+  border-color: #4e75ff;
+}
+
+.fieldset legend {
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-right: auto;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #6c8cff;
+}
+
+.btn:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: auto;
+}
+
+.container {
+  padding: 32px 16px;
+}
